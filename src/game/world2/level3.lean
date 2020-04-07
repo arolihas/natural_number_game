@@ -32,15 +32,7 @@ $$ \operatorname{succ}(a) + b = \operatorname{succ}(a + b). $$
 -/
 lemma succ_add (a b : mynat) : succ a + b = succ (a + b) :=
 begin [nat_num_game]
-  induction b with d hd,
-  {
-    refl
-  }, 
-  { rw add_succ,
-    rw hd,
-    rw add_succ,
-    refl
-  }
+ 
 end
 
 end mynat -- hide 
