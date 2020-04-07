@@ -20,11 +20,5 @@ From $P\implies Q$ and $Q\implies R$ we can deduce $P\implies R$.
 -/
 lemma imp_trans (P Q R : Prop) : (P → Q) → ((Q → R) → (P → R)) :=
 begin
-  intros hpq hqr,
-  intro p,
-  apply hqr,
-  apply hpq,
-  assumption
-  
 
 end

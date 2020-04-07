@@ -15,12 +15,7 @@ Another straightforward one.
 -/
 theorem le_trans (a b c : mynat) (hab : a ≤ b) (hbc : b ≤ c) : a ≤ c :=
 begin [nat_num_game]
-  cases hab with d hd,
-  cases hbc with e he,
-  use (d + e),
-  rw ←add_assoc,
-  rw ←hd,
-  assumption,
+
 end
 
 /-

@@ -22,11 +22,7 @@ $$Q\implies(P\lor Q).$$
 -/
 example (P Q : Prop) : Q → (P ∨ Q) :=
 begin
-  intro q,
-  right,
-  assumption,
-
-
+ 
 end
 /- Tactic : left and right
 

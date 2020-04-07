@@ -35,18 +35,7 @@ The product of two non-zero natural numbers is non-zero.
 -/
 theorem mul_pos (a b : mynat) : a ≠ 0 → b ≠ 0 → a * b ≠ 0 :=
 begin [nat_num_game]
-  intros ha hb,
-  intro hab,
-  cases b with b,
-    apply hb,
-    refl,
-  rw mul_succ at hab,
-  apply ha,
-  cases a with a,
-    refl,
-  rw add_succ at hab,
-  exfalso,
-  exact succ_ne_zero _ hab,
+  
 
 
 end

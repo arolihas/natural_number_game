@@ -16,8 +16,6 @@ example (A B C D E F G H I J K L : Prop)
 (f11 : J → I) (f12 : I → H) (f13 : E → H) (f14 : H → K) (f15 : I → L)
  : A → L :=
 begin
-  cc,
-
 
 
 end

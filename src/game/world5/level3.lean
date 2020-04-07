@@ -119,11 +119,7 @@ example (P Q R S T U: Type)
 (l : T → U)
 : U :=
 begin
-  have q := h(p),
-  have t : T := j(q),
-  have u : U := l(t),
-  exact u,
-
+  
 
 end
 

@@ -18,16 +18,7 @@ $\le$ is antisymmetric. In other words, if $a\le b$ and $b\le a$ then $a = b$.
 -/
 theorem le_antisymm (a b : mynat) (hab : a ≤ b) (hba : b ≤ a) : a = b :=
 begin [nat_num_game]
-  cases hab with c hc,
-  cases hba with d hd,
-  rw hc at hd,
-  rw add_assoc at hd,
-  symmetry at hd,
-  have h := eq_zero_of_add_right_eq_self _ _ hd,
-  have h2 := add_right_eq_zero h,
-  rw h2 at hc,
-  rw hc,
-  exact add_zero a,
+  
 
 
 end

@@ -41,13 +41,7 @@ For all naturals $a$, $b$, if $a\leq b$ then $a\leq \operatorname{succ}(b)$.
 -/
 theorem le_succ (a b : mynat) : a ≤ b → a ≤ (succ b) :=
 begin [nat_num_game]
-  intro h,
-  cases h with c hc,
-  rw hc,
-  use c + 1,
-  refl,
-
-
+ 
 end
 
 /-

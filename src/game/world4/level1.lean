@@ -47,10 +47,7 @@ $0 ^ 0 = 1$.
 -/
 lemma zero_pow_zero : (0 : mynat) ^ (0 : mynat) = 1 :=
 begin [nat_num_game]
-  rw pow_zero,
-  refl,
-
-
+  
 end
 
 end mynat -- hide

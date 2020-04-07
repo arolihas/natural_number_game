@@ -17,20 +17,7 @@ $$P\land(Q\lor R)\iff(P\land Q)\lor (P\land R).$$
 -/
 lemma and_or_distrib_left (P Q R : Prop) : P ∧ (Q ∨ R) ↔ (P ∧ Q) ∨ (P ∧ R) :=
 begin
-  split,
-  intro h,
-  cases h with hp hqr,
-  cases hqr with q r,
-  left, split, assumption, assumption,
-  right, split, assumption, assumption,
-  intro h,
-  cases h with hpq hpr,
-  cases hpq with p q,
-  split, assumption,
-  left, assumption,
-  cases hpr with hp hr,
-  split, assumption,
-  right, assumption,
+  
 
 
 

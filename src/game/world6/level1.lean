@@ -79,8 +79,6 @@ If $P$ is true, and $P\implies Q$ is also true, then $Q$ is true.
 -/
 example (P Q : Prop) (p : P) (h : P → Q) : Q :=
 begin
-exact h(p),
-
 
 
 end 

@@ -41,10 +41,5 @@ make an element of $\operatorname{Hom}(\operatorname{Hom}(P,Q),
 -/
 example (P Q : Type) : (P → Q) → ((Q → empty) → (P → empty)) :=
 begin
-  intros f h p,
-  apply h,
-  apply f,
-  exact p,
-
-
+ 
 end

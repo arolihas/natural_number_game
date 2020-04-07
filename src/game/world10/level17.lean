@@ -23,11 +23,7 @@ $$a<b\iff\operatorname{succ}(a)\le b.$$
 -/
 lemma lt_iff_succ_le (a b : mynat) : a < b ↔ succ a ≤ b :=
 begin [nat_num_game]
-  split,
-    exact lt_aux_one a b,
-  exact lt_aux_two a b,
-
-
+ 
 end
 /-
 For now -- that's it. In the next version of the natural number game we will go on and make

@@ -40,26 +40,7 @@ begin [nat_num_game]
   rw two_eq_succ_one,
   rw one_eq_succ_zero,
   repeat {rw pow_succ},
-  repeat {rw pow_zero},
-  ring,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 

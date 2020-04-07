@@ -20,12 +20,5 @@ make an element of $\operatorname{Hom}(\operatorname{Hom}(P,Q),
 -/
 example (P Q F : Type) : (P → Q) → ((Q → F) → (P → F)) :=
 begin
-  intro f,
-  intro h,
-  intro p,
-  apply h,
-  apply f,
-  exact p,
-
-
+  
 end

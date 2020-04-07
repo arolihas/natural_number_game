@@ -122,9 +122,5 @@ We define a function from mynat to mynat.
 -/
 example : mynat → mynat :=
 begin [nat_num_game]
-  intro n,
-  exact 3*n+2,
-
-
-
+ 
 end

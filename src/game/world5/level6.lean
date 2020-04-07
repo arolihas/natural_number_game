@@ -34,13 +34,7 @@ make an element of $\operatorname{Hom}(\operatorname{Hom}(P,\operatorname{Hom}(Q
 -/
 example (P Q R : Type) : (P → (Q → R)) → ((P → Q) → (P → R)) :=
 begin
-  intro f,
-  intro h,
-  intro p,
-  have j : Q → R := f p,
-  apply j,
-  apply h,
-  exact p,
+
 
 
 end

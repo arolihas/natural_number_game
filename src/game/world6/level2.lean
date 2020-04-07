@@ -60,9 +60,5 @@ If $P$ is a proposition then $P\implies P$.
 -/
 lemma imp_self (P : Prop) : P → P :=
 begin
-  intro p,
-  exact p,
-
-
-
+  
 end

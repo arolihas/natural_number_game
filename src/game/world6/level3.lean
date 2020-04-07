@@ -59,11 +59,7 @@ lemma maze (P Q R S T U: Prop)
 (l : T → U)
 : U :=
 begin
-  have q := h(p),
-  have t := j(q),
-  have u := l(t),
-  exact u,
-
+ 
 
 end
 

@@ -30,15 +30,7 @@ $\lnot Q\implies \lnot P$.
 -/
 lemma contrapositive (P Q : Prop) : (P → Q) → (¬ Q → ¬ P) :=
 begin
-  repeat {rw not_iff_imp_false},
-  intro f,
-  intro h,
-  intro p,
-  apply h,
-  apply f,
-  exact p,
-
-
+ 
 end
 
 /-

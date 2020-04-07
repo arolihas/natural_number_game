@@ -16,13 +16,7 @@ $a+t\le b+t$.
 -/
 theorem add_le_add_right (a b : mynat) : a ≤ b → ∀ t, (a + t) ≤ (b + t) :=
 begin [nat_num_game]
-  intro h,
-  cases h with c hc,
-  intro t,
-  use c,
-  rw hc,
-  ring,
-
+ 
   
 end
 

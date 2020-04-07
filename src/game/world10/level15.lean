@@ -26,20 +26,7 @@ $$a\le b\land\lnot(b\le a)\implies\operatorname{succ}(a)\le b.$$
 -/
 lemma lt_aux_one (a b : mynat) : a ≤ b ∧ ¬ (b ≤ a) → succ a ≤ b :=
 begin [nat_num_game]
-  intro h,
-  cases h with h1 h2,
-  cases h1 with c hc,
-  cases c with d,
-    exfalso,
-    rw add_zero at hc,
-    apply h2,
-    rw hc,
-    refl,
-  use d,
-  rw hc,
-  rw add_succ,
-  rw succ_add,
-  refl,
+
 
 
 end
